@@ -1,0 +1,137 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.modal.open {
+  display: block;
+}
+
+.modal-for-yesno {
+  width: fit-content;
+  max-width: 45vw;
+  word-wrap: break-word;
+  /* Allows long words to be broken and wrap onto the next line */
+  white-space: normal;
+  /* Ensures text wraps within the container */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: auto;
+  /* Change height to auto */
+  max-height: 90%;
+  /* Add max-height */
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  /* Add display flex */
+  flex-direction: column;
+  /* Add flex direction column */
+}
+
+
+.modal-dialog {
+  position: relative;
+  top: 50%;
+  width: fit-content;
+  max-width: 70vw;
+  height: auto;
+  /* Change height to auto */
+  max-height: 96vh;
+  /* Add max-height */
+  margin: 0 auto;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  /* Add display flex */
+  flex-direction: column;
+  /* Add flex direction column */
+}
+
+.modal-content {
+  padding: 20px;
+  flex: 1;
+  /* Add flex 1 */
+  overflow-y: auto;
+  /* Add overflow-y auto */
+}
+
+.modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 3vh;
+  color: rgb(62, 81, 75);
+}
+
+.modal-title {
+  margin: 0;
+  margin-right: 10%;
+  text-align: center;
+  /* Center title horizontally */
+  flex-grow: 1;
+  /* Allow title to take up available space */
+}
+
+.modal-body .form-group {
+  margin-bottom: 20px;
+}
+
+.modal-footer {
+  display: flex;
+  max-height: 2vh;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+
+
+}
+
+
+
+.modal-footer button:focus {
+
+  box-shadow: 1px 1px 5px 5px rgba(21, 156, 228, 0.4);
+  /* Customize this to your preferred highlight style */
+}
+
+
+.btn-close {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 1vw;
+  height: 1vw;
+  position: sticky;
+  left: 95%;
+
+// to avoid selecting button
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.btn-close:hover {
+  font-size: 1.5rem;
+}
+
+.btn-close:focus {
+  outline: none;
+  font-size: 1.5rem;
+
+}

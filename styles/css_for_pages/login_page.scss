@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
+
+.loginpage-body {
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7;
+    background-color: var(--secondary-background-color);
+    overflow-x: hidden;
+}
+
+.loginpage-a {
+    text-decoration: none;
+}
+
+.loginpage-stylep {
+    font-weight: 500;
+    font-size: 1.8vh;
+    line-height: 1.7;
+    color: var(--white);
+}
+
+.loginpage-h1style {
+    margin-top: 5vh;
+    color: var(--primary-text-color);
+}
+
+.loginpage-link {
+    color: var(--primary-text-color);
+}
+
+.loginpage-link:hover {
+    display: inline-block;
+    font-weight: 550;
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+    border-radius: 1.5vh;
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+}
+
+.loginpage-full_height {
+    min-height: 100vh;
+}
+
+.loginpage-card_3d_wrap {
+    width: max-content;
+    margin-left: 30vw;
+    margin-top: 20vh;
+    height: 40vh;
+    perspective: 800vh;
+    background-color: #000000;
+}
+
+.loginpage-card_3d_wrapper {
+    width: 8vw;
+    height: 50vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 600ms ease-out;
+}
+
+.loginpage-card_front {
+    width: 43vw;
+    height: 54vh;
+    background-color: var(--primary-background-color);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 1vh;
+    left: 0;
+    top: 0;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    //box-shadow: 0 4px 38px 0 var(--primary-shadow-color);
+}
+
+.loginpage-center_wrap {
+    position: absolute;
+    width: 40vw;
+    padding: 0 4vw;
+    top: 25vh;
+    left: 0;
+    transform: translate3d(0, -50%, 3vh) perspective(100vh);
+    z-index: 20;
+    display: block;
+}
+
+.loginpage-form_group {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.loginpage-form_style {
+    padding: 0.7vw 2vw;
+    height: 5vh;
+    width: 26vw;
+    margin-top: 2vh;
+    margin-left: .2vw;
+    margin-right: 2vw;
+    border-radius: 2vh;
+    font-size: 2.6vh;
+    line-height: 1vh; // this changes the height of blue color when the text is highlighted
+    letter-spacing: 0.5px;
+    outline: none;
+    background-color: var(--secondary-background-color);
+    border: none;
+    transition: all 100ms linear;
+    box-shadow: 0px 1px 1px 0px var(--black);
+}
+
+.loginpage-form_style::selection {
+    background-color: rgba(54, 167, 201, 0.6);
+
+}
+
+.loginpage-form_style:focus,
+.loginpage-form_style:active {
+    border: none;
+    outline: none;
+    //  box-shadow: 0 4px 8px 0 var(--black);
+}
+
+
+
+.loginpage-eye_icon {
+
+    font-size: 3vh;
+    transition: all 100ms linear;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--primary-text-color);
+    border-radius: 1vh;
+    outline: none;
+}
+
+.loginpage-eye_icon:hover {
+    cursor: pointer;
+    font-size: 3.5vh;
+
+}
+
+.loginpage-eye_icon:focus-visible {
+    border-radius: 1vh;
+    border: .3vh solid #000;
+}
+
+.loginpage-rememberMetext {
+    color: var(--primary-text-color);
+    cursor: pointer;
+
+}
+
+.loginpage-rememberMetext:hover {
+    cursor: pointer;
+font-weight: bold;
+}
+
+.loginpage-rememberMecontainer {
+    margin-top: 1vh;
+     display: 'flex';
+    align-items: 'center';
+    
+}
+
+//checkbox
+
+.loginpage-rememberMecheckbox {
+    width: 1.6vh;
+    height: 2vh;
+    margin-right: 1.3vh;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+}
+
+.loginpage-rememberMecheckbox:hover::before {
+    content: '';
+    position: absolute;
+    width: 1.8vh;
+    height: 1.6vh;
+    border: 0.3vh solid var(--primary-text-color);
+    background: var(--primary-background-color);
+    border-radius: 3px;
+
+
+}
+
+
+/** None Checked design **/
+.loginpage-rememberMecheckbox::before {
+    content: '';
+    position: absolute;
+    width: 1.8vh;
+    height: 1.6vh;
+    border: 0.2vh solid var(--secondary-background-color);
+    background: var(--primary-background-color);
+    border-radius: 3px;
+}
+
+/** Checked design **/
+.loginpage-rememberMecheckbox:checked::before {
+    content: '';
+    position: absolute;
+    background: var(--primary-background-color);
+}
+
+.loginpage-rememberMecheckbox:checked::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    margin-left: 1.1vh;
+    margin-top: -1.3vh;
+    width: 30%;
+    height: 120%;
+    transform: rotate(40deg);
+    animation: loginpage-lineAnimation 0.3s ease-in-out forwards;
+
+}
+
+.loginpage-rememberMecheckbox:focus-visible::before {
+
+    content: '';
+    position: absolute;
+    width: 1.8vh;
+    height: 1.6vh;
+    border: 0.2vh solid var(--secondary-background-color);
+    background: var(--black);
+    border-radius: 3px;
+    
+}
+
+
+
+
+@keyframes loginpage-lineAnimation {
+
+    50% {
+        border-bottom: 3px solid var(--secondary-background-color);
+    }
+
+    100% {
+        border-right: 3px solid var(--secondary-background-color);
+
+        border-bottom: 3px solid var(--secondary-background-color);
+    }
+}
+
+
+.loginpage-btn {
+    height: 5vh;
+    width: 15%;
+    font-size: 1.9vh;
+    font-weight: 600;
+    margin-left: 10vw;
+    text-transform: uppercase;
+    transition: all 100ms linear;
+    padding: 0 4vw;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+    border-radius: 1.5vh;
+    box-shadow: 0 1px 3px 0 var(--secondary-shadow-color);
+}
+
+
+.loginpage-btn:hover {
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+    cursor: pointer;
+    width: 18%;
+    font-size: 2.2vh;
+    box-shadow: 0 0vh 1.2vh 0vh var(--secondary-shadow-color);
+}

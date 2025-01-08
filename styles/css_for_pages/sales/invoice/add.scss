@@ -1,0 +1,15 @@
+
+.input-group {
+  position: relative;
+}
+.input-group-suffix {
+  width: 5vh;
+  padding: 5px;
+  position: absolute;
+  top: 61%;
+  transform: translateY(-50%) translateX(100%);
+  right: 6.3vh;
+  font-size: 16px;
+  color: grey;
+  z-index: 1;
+}

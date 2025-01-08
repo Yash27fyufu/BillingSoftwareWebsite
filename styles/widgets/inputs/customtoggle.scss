@@ -1,0 +1,120 @@
+.customtoggle-button-cover {
+    background-color: #fff;
+    box-shadow: 0 10px 20px -8px #c5d6d6;
+    border-radius: 4px;
+    position: absolute;
+}
+
+.customtoggle-button {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    align-content: center;
+    border-radius: 100px;
+}
+
+.customtoggle-text {
+    padding-right: 5px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.customtoggle-checkbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.customtoggle-knob {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    color: #fff;
+    font-size: 35%;
+    font-weight: bold;
+    padding: 10% 5%;
+    border-radius: 50%;
+    white-space: nowrap;
+}
+
+
+.customtoggle-knobs {
+
+
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.customtoggle-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fcebeb;
+    z-index: 1;
+    border-radius: 100px;
+    transition: background-color 0.3s ease;
+}
+
+.customtoggle-checkbox:active+.customtoggle-knobs span {
+    // this is for providing some good visual effects when the toggle is pressed
+    width: 40%;
+}
+
+.customtoggle-checkbox+.customtoggle-knobs span {
+    background-color: #f44336;
+    transition: background-color 0.3s ease, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+}
+
+.customtoggle-checkbox:checked+.customtoggle-knobs span {
+    background-color: #03a9f4;
+}
+
+.customtoggle-checkbox:checked~.customtoggle-layer {
+    background-color: #ebf7fc;
+}
+
+.customtoggle-button:focus-within 
+{
+    box-shadow: 0 0 0 2px black;
+    /* Black outline */
+    outline: none;
+    /* Remove default outline */
+}
+
+.customtoggle-checkbox:focus+.customtoggle-knobs span
+{
+    box-shadow: 0 0 0 2px black;
+    /* Black outline */
+    outline: none;
+    /* Remove default outline */
+}
+
+
+.customtoggle-checkbox:focus+.customtoggle-knobs span {
+    overflow: visible;
+
+}
+
+
+.customtoggle-checkbox:hover+.customtoggle-knobs span,
+.customtoggle-checkbox:hover~.customtoggle-layer {
+    box-shadow: 0 0 0 3px black;
+    /* Black outline */
+    outline: none;
+    /* Remove default outline */
+}

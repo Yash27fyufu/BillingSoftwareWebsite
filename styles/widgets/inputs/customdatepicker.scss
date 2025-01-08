@@ -1,0 +1,40 @@
+.customdatepicker-div {
+    background: var(--transparent);
+    position: relative;
+}
+
+.customdatepicker-label_for_input_box {
+    padding-left: 10px;
+    color: var(--secondary-text-color);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.customdatepicker-input_box_div {
+    display: flex;
+    border-radius: 8px;
+    border-color: var(--black);
+    border-width: 1.8px;
+    border-style: solid;
+    box-sizing: border-box;
+    /* Ensure padding and borders are included in the width calculation */
+
+}
+
+.customdatepicker-input_box {
+    background: var(--transparent);
+    font-family: sans-serif;
+    height: 4.25vh;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.customdatepicker-input_box:hover {
+    text-overflow: unset;
+}

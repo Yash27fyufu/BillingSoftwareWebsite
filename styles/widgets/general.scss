@@ -1,0 +1,91 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+input::placeholder {
+  user-select: none;
+}
+
+textarea::placeholder {
+  user-select: none;
+}
+
+
+// removing the spin-button from input box type number
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+.no_select_text {
+  user-select: none;
+  /* Prevent text selection */
+  -webkit-user-select: none;
+  /* For older versions of Safari */
+  -moz-user-select: none;
+  /* For older versions of Firefox */
+  -ms-user-select: none;
+  /* For older versions of Internet Explorer */
+}
+
+.allow_copy_in_no_select_text {
+  user-select: text;
+  /* Allow text selection */
+  -webkit-user-select: text;
+  /* For older versions of Safari */
+  -moz-user-select: text;
+  /* For older versions of Firefox */
+  -ms-user-select: text;
+  /* For older versions of Internet Explorer */
+}
+
+.primary-icon{
+  color: black;
+  stroke-width: 1;
+}
+
+
+//custom design for scroll bar
+::-webkit-scrollbar {
+  width: 6px; /* Adjust the width of the scrollbar */
+  height: 8px; /* Adjust the height of the scrollbar */
+}
+
+/* Style the track */
+::-webkit-scrollbar-track {
+  background-color: transparent; 
+}
+
+/* Style the thumb (tracker) */
+::-webkit-scrollbar-thumb {
+  background-color: #504f4f; 
+  border-radius: 99px; 
+  border: solid;
+  border-color: white;
+  height: 15px; 
+  width: 5px; 
+}
+
+/* Style the thumb when hovered */
+::-webkit-scrollbar-thumb:hover {
+  border: solid;
+  border-color: rgb(50, 50, 50);
+  background-color: #6e6e6e; 
+}
+
+/* Style the thumb when actively being dragged */
+::-webkit-scrollbar-thumb:active {
+  background-color: #a0a0a0;
+}
+
+// scroll bar design upto here 

@@ -1,0 +1,29 @@
+.customtable-hover_container {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: 100%; /* Ensure the container spans the full width */
+  height: 1.5em; /* Set a height to accommodate the overlapping elements */
+}
+
+.number,
+.itemstable_icon {
+  position: absolute;
+  top: 30%; /* Align both spans to the top */
+  left: 50%; /* Center them horizontally within the container */
+  transform: translateX(-50%); /* Adjust for perfect centering */
+  text-align: center;
+  width: 100%; /* Ensure consistent width for alignment */
+}
+
+.itemstable_icon {
+  display: none; /* Hide the icon by default */
+}
+
+.customtable-hover_container:hover .number {
+  display: none; /* Hide the number on hover */
+}
+
+.customtable-hover_container:hover .itemstable_icon {
+  display: block; /* Show the icon on hover */
+}

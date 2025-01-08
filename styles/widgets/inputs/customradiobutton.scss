@@ -1,0 +1,89 @@
+.custom_radio_button-input {
+    position: absolute;
+    left: -9999px;
+}
+
+.custom_radio_button-div {
+    margin-left: 1vw;
+    margin-top: 1px;
+    font-size: 14.5px;
+    align-content: center;
+    width: max-content;
+}
+
+.custom_radio_button-label {
+    display: flex;
+    cursor: pointer;
+    font-weight: 500;
+    overflow: hidden;
+    margin-bottom: 0.375em;
+    margin-left: 6px;
+    background-color: white;
+}
+
+.custom_radio_button-input {
+    position: absolute;
+    left: -9999px;
+}
+
+.custom_radio_button-input:checked + .custom_radio_button-span {
+    background-color: mix(#fff, #129cbe, 88%);
+}
+
+.custom_radio_button-input:checked + .custom_radio_button-span::before {
+    box-shadow: inset 0 0 0 0.3vw #129cbe;
+}
+
+.custom_radio_button-input:checked + .custom_radio_button-span::after {
+    content: "";
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: #129cbe;
+    position: absolute;
+    margin-left: .5vw;
+    border-radius: 40vw;
+}
+
+.custom_radio_button-span {
+    display: flex;
+    align-items: center;
+    padding: 0.375em 0.75em 0.375em 0.375em;
+    border-radius: 99em;
+    transition: 0.25s ease;
+}
+
+.custom_radio_button-span:hover,
+.custom_radio_button-input:focus + .custom_radio_button-span {
+    background-color: mix(#fff, #000, 80%);
+}
+
+.custom_radio_button-span::before {
+    display: flex;
+    flex-shrink: 0;
+    content: "";
+    background-color: #fff;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 40%;
+    margin-right: 0.375em;
+    transition: 0.25s ease;
+    box-shadow: inset 0 0 0 0.2vw #000;
+}
+
+.custom_radio_button-input:disabled + .custom_radio_button-span,
+.custom_radio_button-input:disabled + .custom_radio_button-span:hover {
+    background-color: #f0f0f0; /* Light gray background when disabled */
+    cursor: not-allowed; /* Not allowed cursor */
+    color: #a0a0a0; /* Gray text color */
+}
+
+.custom_radio_button-input:disabled + .custom_radio_button-span::before {
+    background-color: #d0d0d0; /* Gray color for the radio circle */
+    box-shadow: inset 0 0 0 0.2vw #a0a0a0; /* Gray border */
+}
+
+.custom_radio_button-input:disabled:checked + .custom_radio_button-span::after {
+    background-color: #d0d0d0; /* Gray checkmark */
+}
+
+

@@ -1,0 +1,55 @@
+//color codes
+
+@import "./color_codes.scss";
+
+
+
+// just every other thing
+
+@import "./extra.scss";
+
+
+
+//pages
+
+@import "./css_for_pages/login_page.scss";
+
+@import "./css_for_pages/sales/invoice/add.scss";
+
+
+
+
+//widgets
+
+@import "./widgets/general.scss";
+
+@import "./widgets/side_navbar.scss";
+
+@import "./widgets/inputs/autocompleteinput.scss";
+
+@import "./widgets/inputs/dropdownbox.scss";
+
+@import "./widgets/inputs/customtextbox.scss";
+
+@import "./widgets/inputs/customtextareabox.scss";
+
+@import "./widgets/inputs/customradiobutton.scss";
+
+@import "./widgets/inputs/customdatepicker.scss";
+
+@import "./widgets/inputs/customtoggle.scss";
+
+@import "./widgets/table/itemstable.scss";
+
+@import "./widgets/table/customtable.scss";
+
+@import "./widgets/table/total_calc.scss";
+
+@import "./widgets/loadingscreen.scss";
+
+@import "./widgets/dialog/customdialogbox.scss";
+
+@import "./widgets/snackbar/customsnackbar.scss";
+
+
+
