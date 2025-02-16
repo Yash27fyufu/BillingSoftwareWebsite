@@ -171,7 +171,6 @@ const TotalForSalesBill = ({
 
   function changeFocusTo(referenceToFocus) {
     setTimeout(() => {
-      // try catch inside timeout along with check condition ensures no crash
       try {
         if (referenceToFocus && referenceToFocus.current) {
           referenceToFocus.current.focus();

@@ -1,8 +1,9 @@
 import executeQuery from "../database/executequery";
 
-export var domain_name = 'http://localhost:3030';
+export var domain_name =
+  process.env.type == "development" ?
+    'http://localhost:3030' : 'http://everystint.com';
 
-// export var domain_name = 'http://everystint.com';
 
 
 export default async function toMysqlDateTime(date) {

@@ -11,7 +11,6 @@ function SalesView(data) {
     const [toDate, setToDate] = useState();
 
     function handleSetFromDate(value) {
-        // console.log(compareDates(fromDate,toDate));
         setFromDate(value);
     }
 

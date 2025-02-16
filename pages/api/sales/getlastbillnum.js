@@ -24,8 +24,7 @@ export default async function Handler(req, res) {
         }
 
     } catch (err) {
-        console.error(err);
-        res.status(400).json({ error: "Invalid User Token", });
+        res.status(400).json({ error: "Invalid User Token "+ err, });
 
     }
 }

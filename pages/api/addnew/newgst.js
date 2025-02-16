@@ -25,8 +25,7 @@ export default async function Handler(req, res) {
         }
 
     } catch (err) {
-        console.error(err);
-        res.status(400).json({ error: "Invalid User Token", });
+        res.status(400).json({ error: "Invalid User Token " + err, });
 
     }
 }
@@ -101,7 +100,7 @@ function checkForRequiredDetails(details) {
 
     } else if (!(details.GSTDetails.GST_PERCENTAGE)) {
         return { error: "GST percentage required" }
-        
+
     } else {
         return true
     }
